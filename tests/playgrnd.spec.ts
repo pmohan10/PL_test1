@@ -6,9 +6,9 @@ test.beforeEach(async ({page})=> {
   await page.getByText('Form Layouts').click()
 })
 
-test('1st test', ({page})=> {
-    page.goto('https://playground.bondaracademy.com');
-})
+// test('1st test', ({page})=> {
+//     page.goto('https://playground.bondaracademy.com');
+// })
 
 test('title check', async ({ page }) => {
   
@@ -29,7 +29,7 @@ test('title check', async ({ page }) => {
 
 });
 
-test.only('all elements', async ({ page }) => {
+test('all elements', async ({ page }) => {
   //Inline Form elem's
   await page.locator('[placeholder="Jane Doe"]').fill('me and You')
   await page.locator('nb-card', {hasText: 'Inline form'}).locator('[placeholder="Email"]').fill('sjk@jil.com')
