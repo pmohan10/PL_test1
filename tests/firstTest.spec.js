@@ -33,7 +33,7 @@ test('Locator tests', async ({ page }) => {
         await page.getByText('Form Layouts').click();
 
         const radioLabels = await page.locator('nb-radio').allTextContents()
-        console.log(radioLabels)
+        // console.log(radioLabels)
     //    expect(radioLabels).toContain('Option 1')
     })
 
